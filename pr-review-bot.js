@@ -1,9 +1,13 @@
 import 'dotenv/config';
 import { Octokit } from '@octokit/rest';
+import fetch from 'node-fetch';
 
 // Authenticate with GitHub
 const octokit = new Octokit({
   auth: process.env.GH_TOKEN,
+  request: {
+    fetch: fetch
+  }
 });
 
 // Repository details
