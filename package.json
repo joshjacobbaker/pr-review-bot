@@ -2,16 +2,17 @@
   "name": "prreviewbot",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "pr-review-bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "me",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@octokit/rest": "^21.1.0",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2"
   }
 }
