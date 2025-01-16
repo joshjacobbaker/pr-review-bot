@@ -22,7 +22,5 @@ jobs:
 
     - name: Run PR Review Bot
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: node pr-review-bot.js
-    - name: Debug Token
-      run: "echo 'Token: GH_TOKEN ${{ secrets.GH_TOKEN }} GITHUB_TOKEN ${{ secrets.GITHUB_TOKEN }}'"
